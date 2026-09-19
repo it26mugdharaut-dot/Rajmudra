@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maharashtrian Trend Jewellery</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      🌸 Maharashtrian Trend Jewellery
+    </div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="cart-button" onclick="openCart()">
+      🛒 Cart
+      <span id="cartCount">0</span>
+    </button>
+
+  </nav>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+  <div class="hero-content">
+
+    <p class="small-title">
+      TRADITION MEETS TREND
+    </p>
+
+    <h1>
+      🌸RAJMUDRA🌸
+      Maharashtrian Trend Jewellery
+    </h1>
+
+    <p>
+      Celebrate Maharashtra's rich culture with beautiful,
+      lightweight and modern jewellery.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a class="btn" href="#products">
+        Explore Collection
+      </a>
+
+      <a class="btn secondary-btn" href="#about">
+        Discover Our Story
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+  <div class="section-title">
+
+    <p>OUR STORY</p>
+
+    <h2>About Us</h2>
+
+  </div>
+
+
+  <div class="about-card">
+
+    <p>
+      Maharashtrian Trend Jewellery brings traditional
+      Maharashtrian designs into modern fashion.
+      We offer affordable, lightweight and attractive
+      jewellery for festivals, weddings, cultural events
+      and everyday styling.
+    </p>
+
+
+    <div class="features">
+
+      <div>✨ Modern Designs</div>
+
+      <div>🌸 Traditional Identity</div>
+
+      <div>💎 Lightweight</div>
+
+      <div>💰 Affordable</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products" class="section products-section">
+
+  <div class="section-title">
+
+    <p>OUR COLLECTION</p>
+
+    <h2>Trending Jewellery</h2>
+
+    <p class="section-description">
+      Discover jewellery designed for every occasion.
+    </p>
+
+  </div>
+
+
+  <div class="product-grid">
+
+
+    <!-- PRODUCT 1 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/nath.jpg"
+           alt="Nath Earrings">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(24)</span>
+      </div>
+
+      <h3>Nath Earrings</h3>
+
+      <p>
+        Traditional Nath-inspired earrings with a modern look.
+      </p>
+
+      <div class="price">
+        ₹150 – ₹350
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Nath Earrings','Traditional Nath-inspired earrings with a modern look.','₹150 – ₹350','images/nath.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Nath Earrings',150,'images/nath.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+      
+
+      <button class="explore-designs-btn" onclick="exploreCollection('nath')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 2 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/earcuff.jpg"
+           alt="Ear Cuffs">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(31)</span>
+      </div>
+
+      <h3>Ear Cuffs</h3>
+
+      <p>
+        Trendy and lightweight ear cuffs for a stylish look.
+      </p>
+
+      <div class="price">
+        ₹150 – ₹400
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Ear Cuffs','Trendy and lightweight ear cuffs for a stylish look.','₹150 – ₹400','images/earcuff.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Ear Cuffs',150,'images/earcuff.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('earcuff')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 3 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/rings3.jpg"
+           alt="Traditional Rings">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(18)</span>
+      </div>
+
+      <h3>Traditional Rings</h3>
+
+      <p>
+        Elegant rings inspired by Maharashtrian patterns.
+      </p>
+
+      <div class="price">
+        ₹100 – ₹300
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Traditional Rings','Elegant rings inspired by Maharashtrian patterns.','₹100 – ₹300','images/rings.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Traditional Rings',100,'images/rings.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('ring')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 4 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/bugadi2.jpg"
+           alt="Bugadi">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(27)</span>
+      </div>
+
+      <h3>Bugadi</h3>
+
+      <p>
+        A modern take on the classic Maharashtrian ear ornament.
+      </p>
+
+      <div class="price">
+        ₹200 – ₹500
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Bugadi','A modern take on the classic Maharashtrian ear ornament.','₹200 – ₹500','images/bugadi.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Bugadi',200,'images/bugadi.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('bugadi')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 5 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/thushi.jpg"
+           alt="Thushi Inspired">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(35)</span>
+      </div>
+
+      <h3>Thushi Inspired</h3>
+
+      <p>
+        Traditional-inspired jewellery for festive occasions.
+      </p>
+
+      <div class="price">
+        ₹400 – ₹900
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Thushi Inspired','Traditional-inspired jewellery for festive occasions.','₹400 – ₹900','images/thushi.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Thushi Inspired',400,'images/thushi.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('thushi')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 6 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/set.jpg"
+           alt="Jewellery Sets">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(42)</span>
+      </div>
+
+      <h3>Jewellery Sets</h3>
+
+      <p>
+        Matching sets for weddings, festivals and celebrations.
+      </p>
+
+      <div class="price">
+        ₹500 – ₹1,500
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Jewellery Sets','Matching sets for weddings, festivals and celebrations.','₹500 – ₹1,500','images/jewellery-set.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Jewellery Sets',500,'images/jewellery-set.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('set')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 7 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/necklace.jpg"
+           alt="Necklace">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(29)</span>
+      </div>
+
+      <h3>Necklaces</h3>
+
+      <p>
+        Beautiful traditional necklaces with a modern touch.
+      </p>
+
+      <div class="price">
+        ₹500 – ₹1,200
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Necklaces','Beautiful traditional necklaces with a modern touch.','₹500 – ₹1,200','images/necklace.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Necklaces',500,'images/necklace.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('necklace')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 8 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/anklet.jpg"
+           alt="Anklet">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(21)</span>
+      </div>
+
+      <h3>Anklets</h3>
+
+      <p>
+        Elegant and comfortable anklets for festive styling.
+      </p>
+
+      <div class="price">
+        ₹200 – ₹600
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Anklets','Elegant and comfortable anklets for festive styling.','₹200 – ₹600','images/anklet.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Anklets',200,'images/anklet.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('anklet')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+
+    <!-- PRODUCT 9 -->
+
+    <article class="product-card">
+
+      <div class="wishlist"
+           onclick="toggleWishlist(this)">
+        ♡
+      </div>
+
+      <img src="images/choker1.jpg"
+           alt="Choker">
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <span>(38)</span>
+      </div>
+
+      <h3>Chokers</h3>
+
+      <p>
+        Stylish traditional chokers perfect for celebrations.
+      </p>
+
+      <div class="price">
+        ₹400 – ₹1,000
+      </div>
+
+      <div class="product-buttons">
+
+        <button
+          class="details-btn"
+          onclick="showDetails('Chokers','Stylish traditional chokers perfect for celebrations.','₹400 – ₹1,000','images/choker.jpg')">
+          View Details
+        </button>
+
+        <button
+          class="add-btn"
+          onclick="addToCart('Chokers',400,'images/choker.jpg')">
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+      <button class="explore-designs-btn" onclick="exploreCollection('choker')">
+        ✨ Explore More Designs
+      </button>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="how" class="section">
+
+  <div class="section-title">
+
+    <p>SIMPLE & EASY</p>
+
+    <h2>How It Works</h2>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+      <span>01</span>
+      <h3>Explore</h3>
+      <p>Browse our latest collection.</p>
+    </div>
+
+    <div class="step">
+      <span>02</span>
+      <h3>Choose</h3>
+      <p>Select your favourite jewellery.</p>
+    </div>
+
+    <div class="step">
+      <span>03</span>
+      <h3>Order</h3>
+      <p>Add products to your cart and checkout.</p>
+    </div>
+
+    <div class="step">
+      <span>04</span>
+      <h3>Receive</h3>
+      <p>Get your jewellery carefully packed and delivered.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section id="reviews" class="section reviews-section">
+
+  <div class="section-title">
+
+    <p>CUSTOMER LOVE</p>
+
+    <h2>Customer Reviews</h2>
+
+  </div>
+
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+
+      <div class="review-stars">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        "The jewellery looks beautiful and feels very lightweight.
+        Perfect for traditional functions!"
+      </p>
+
+      <h4>— Aditi</h4>
+
+    </div>
+
+
+    <div class="review-card">
+
+      <div class="review-stars">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        "I loved the Maharashtrian design. The quality and
+        packaging were really nice."
+      </p>
+
+      <h4>— Riya</h4>
+
+    </div>
+
+
+    <div class="review-card">
+
+      <div class="review-stars">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        "Beautiful designs at affordable prices.
+        The ear cuffs are my favourite!"
+      </p>
+
+      <h4>— Sneha</h4>
+
+    </div>
+
+  </div>
+
+
+  <div class="review-form">
+
+    <h3>Share Your Experience</h3>
+
+    <input
+      type="text"
+      id="reviewName"
+      placeholder="Your Name">
+
+    <select id="reviewRating">
+
+      <option value="5">★★★★★ - Excellent</option>
+      <option value="4">★★★★ - Very Good</option>
+      <option value="3">★★★ - Good</option>
+      <option value="2">★★ - Average</option>
+      <option value="1">★ - Poor</option>
+
+    </select>
+
+    <textarea
+      id="reviewText"
+      placeholder="Write your review...">
+    </textarea>
+
+    <button class="btn" onclick="addReview()">
+      Submit Review
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PRICING ================= -->
+
+<section id="pricing" class="section pricing-section">
+
+  <div class="section-title">
+
+    <p>AFFORDABLE STYLE</p>
+
+    <h2>Pricing</h2>
+
+  </div>
+
+
+  <div class="price-box">
+
+    <div>
+      <span>Nath Earrings</span>
+      <b>₹150–₹350</b>
+    </div>
+
+    <div>
+      <span>Ear Cuffs</span>
+      <b>₹150–₹400</b>
+    </div>
+
+    <div>
+      <span>Traditional Rings</span>
+      <b>₹100–₹300</b>
+    </div>
+
+    <div>
+      <span>Bugadi</span>
+      <b>₹200–₹500</b>
+    </div>
+
+    <div>
+      <span>Thushi Inspired</span>
+      <b>₹400–₹900</b>
+    </div>
+
+    <div>
+      <span>Jewellery Sets</span>
+      <b>₹500–₹1,500</b>
+    </div>
+
+    <div>
+      <span>Necklaces</span>
+      <b>₹500–₹1,200</b>
+    </div>
+
+    <div>
+      <span>Anklets</span>
+      <b>₹200–₹600</b>
+    </div>
+
+    <div>
+      <span>Chokers</span>
+      <b>₹400–₹1,000</b>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why section">
+
+  <div class="section-title">
+
+    <p>WHY US?</p>
+
+    <h2>Tradition With A Modern Touch</h2>
+
+  </div>
+
+
+  <div class="why-grid">
+
+    <div>🌸 Traditional Maharashtrian designs</div>
+
+    <div>✨ Modern & trendy styles</div>
+
+    <div>💎 Lightweight & comfortable</div>
+
+    <div>💰 Affordable pricing</div>
+
+    <div>🎀 Customization available</div>
+
+    <div>📦 Easy online ordering</div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+  <div class="section-title">
+
+    <p>GET IN TOUCH</p>
+
+    <h2>Contact Us</h2>
+
+  </div>
+
+
+  <form id="contactForm">
+
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      required>
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Your Email"
+      required>
+
+    <input
+      type="tel"
+      id="phone"
+      placeholder="Phone Number"
+      required>
+
+
+    <select id="product" required>
+
+      <option value="">
+        Select Product
+      </option>
+
+      <option>Nath Earrings</option>
+      <option>Ear Cuffs</option>
+      <option>Traditional Rings</option>
+      <option>Bugadi</option>
+      <option>Thushi Inspired</option>
+      <option>Jewellery Set</option>
+      <option>Necklaces</option>
+      <option>Anklets</option>
+      <option>Chokers</option>
+
+    </select>
+
+
+    <textarea
+      id="message"
+      rows="5"
+      placeholder="Your message or customization request">
+    </textarea>
+
+
+    <button class="btn" type="submit">
+      Send Enquiry
+    </button>
+
+  </form>
+
+
+  <div class="contact-links">
+
+    <a
+      href="https://wa.me/919999999999"
+      target="_blank">
+      💬 WhatsApp
+    </a>
+
+    <a
+      href="https://instagram.com/"
+      target="_blank">
+      📸 Instagram
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CART MODAL ================= -->
+
+<div id="cartModal" class="modal">
+
+  <div class="modal-content">
+
+    <button
+      class="close-btn"
+      onclick="closeCart()">
+      ×
+    </button>
+
+    <h2>🛒 Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+
+      <span>Total</span>
+
+      <strong id="cartTotal">
+        ₹0
+      </strong>
+
+    </div>
+
+    <button
+      class="checkout-btn"
+      onclick="checkout()">
+      Proceed to Checkout
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- ================= PRODUCT DETAILS MODAL ================= -->
+
+<div id="detailsModal" class="modal">
+
+  <div class="modal-content details-content">
+
+    <button
+      class="close-btn"
+      onclick="closeDetails()">
+      ×
+    </button>
+
+    <img id="detailsImage" src="" alt="">
+
+    <h2 id="detailsName"></h2>
+
+    <p id="detailsDescription"></p>
+
+    <h3 id="detailsPrice"></h3>
+
+  </div>
+
+</div>
+
+
+<!-- ================= CHECKOUT MODAL ================= -->
+
+<div id="checkoutModal" class="modal">
+
+  <div class="modal-content">
+
+    <button
+      class="close-btn"
+      onclick="closeCheckout()">
+      ×
+    </button>
+
+    <h2>🧾 Checkout</h2>
+
+    <p class="checkout-note">
+      Enter your details to place your jewellery order.
+    </p>
+
+
+    <input
+      type="text"
+      id="checkoutName"
+      placeholder="Full Name"
+      required>
+
+    <input
+      type="tel"
+      id="checkoutPhone"
+      placeholder="Phone Number"
+      required>
+
+    <textarea
+      id="checkoutAddress"
+      placeholder="Delivery Address"
+      rows="4"
+      required>
+    </textarea>
+
+
+    <select id="paymentMethod">
+
+      <option value="Cash on Delivery">
+        Cash on Delivery
+      </option>
+
+      <option value="WhatsApp Order">
+        Confirm through WhatsApp
+      </option>
+
+    </select>
+
+
+    <button
+      class="checkout-btn"
+      onclick="placeOrder()">
+      Place Order
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= MORE DESIGNS MODAL ================= -->
+<div id="collectionModal" class="collection-modal" aria-hidden="true">
+  <div class="collection-box">
+    <button class="collection-close" onclick="closeCollection()" aria-label="Close">×</button>
+    <div class="collection-header">
+      <p>RAJMUDRA COLLECTION</p>
+      <h2 id="collectionTitle">Explore More Designs</h2>
+      <span id="collectionSubtitle">Choose your favourite design.</span>
+    </div>
+    <div id="collectionProducts" class="collection-products"></div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <h3>
+    🌸 Maharashtrian Trend Jewellery
+  </h3>
+
+  <p>
+    Traditional Jewellery with a Modern Touch
+  </p>
+
+  <div class="footer-links">
+
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+  <p class="copyright">
+    © 2026 Maharashtrian Trend Jewellery.
+    All rights reserved.
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
